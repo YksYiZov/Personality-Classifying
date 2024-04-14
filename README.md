@@ -1,2 +1,2 @@
 # Personality-Classifying
-The Project of NLP By 
+The Project of NLP By Xinyu Dai
