@@ -4,6 +4,15 @@ import spacy
 import numpy as np
 from Config import *
 
+def save_to_file(file_name, contents):
+    fh = open(file_name, 'w', encoding="utf-8")
+    for content in contents:
+        for one in content:
+            fh.write(f"{content.index(one)}: \n")
+            for k, v in one.items():
+                fh.write(f"{k} : {v}")
+            fh.write(f"\n")
+    fh.close()
 
 def data_load(path):
     train = datasets.load_from_disk(path + "/train")
@@ -35,7 +44,7 @@ def word_counter(nlp, document, is_tqdm):
     document = nlp(document)
     
     word_count = {}
-    document = tqdm.tqdm(document, position=0, leave=False, desc="词数统计") if is_tqdm else document
+    document = tqdm.tqdm(document, position=1, leave=False, desc="词数统计") if is_tqdm else document
     
     for token in document:
         if token.text in word_count.keys():
@@ -64,7 +73,7 @@ def classifier_data(train, number):
 
 def count_one(nlp, classification, is_tqdm):
     classification_count_every = [[] for i in range(8)]
-    times = tqdm.tqdm(range(8), position=1, leave=False, desc="各种类别词数统计") if is_tqdm else range(8)
+    times = tqdm.tqdm(range(8), position=0, leave=False, desc="各种类别词数统计") if is_tqdm else range(8)
     for utype in times:
         for one in classification[utype]:
             document = " ".join(one)
@@ -75,8 +84,13 @@ def count_one(nlp, classification, is_tqdm):
 def count_four(nlp, classification, is_tqdm):
     counts = []
     for i in range(8):
-        document = document_creator(classification[i])
-        word_count = word_counter(nlp, document, is_tqdm)
+        document = document_creator(classification[i], is_tqdm)
+        pos = 0
+        word_count = {}
+        while pos < len(document):
+            word_count.update(word_counter(nlp, document[pos : pos + 999999], is_tqdm))
+            pos += 999999
+        word_count.update(word_counter(nlp, document[pos : -1], is_tqdm))
         counts.append(word_count)
     return counts
 
@@ -144,10 +158,13 @@ def getData(path, is_flit, number, is_tqdm):
     nlp = spacy.load("en_core_web_sm", exclude=["tok2vec", "tagger", "senter", "attribute_ruler", "lemmatizer"])
     
     classification_train = classifier_data(data_train, number)
-    classification_valid = classifier_data(data_valid, -1)
+    classification_valid = classifier_data(data_valid, number)
     
     classification_train_count_every = count_one(nlp, classification_train, is_tqdm)
     classification_valid_count_every = count_one(nlp, classification_valid, is_tqdm)
+    
+    # save_to_file("classification_train_count_every.txt", classification_train_count_every)
+    # save_to_file("classification_valid_count_every.txt", classification_valid_count_every)
     
     I_count_t, E_count_t, S_count_t, N_count_t, T_count_t, F_count_t, J_count_t, P_count_t = count_four(nlp, classification_train, is_tqdm)
     I_count_v, E_count_v, S_count_v, N_count_v, T_count_v, F_count_v, J_count_v, P_count_v = count_four(nlp, classification_valid, is_tqdm)
