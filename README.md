@@ -35,3 +35,5 @@ The Project of NLP By Xinyu Dai
 #### 复现流程
 直接运行在BertModel中提供的Example.ipynb文件，确保数据集路径和模型路径正确即可。
 要注意的点是，Bert-base模型参数量庞大，训练过程冗长，建议减少参与训练的数据规模，训练时长仅供参考：100个样本5个循环的训练＋测试大约需要3小时。
+### 子问题3
+详情见Report->document.pdf
