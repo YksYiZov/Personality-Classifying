@@ -2,3 +2,7 @@
 \contentsline {subsection}{\numberline {1.1}难点}{3}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}言语与性格的相关度}{3}{subsubsection.1.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.2}}{3}{subsubsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.2}实验}{3}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}实验方法方法}{3}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}实验结果}{3}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}实验结果分析}{3}{subsubsection.1.2.3}%
