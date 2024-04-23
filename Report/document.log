@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.2) (preloaded format=xelatex 2022.3.28)  21 APR 2024 17:05
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.2) (preloaded format=xelatex 2022.3.28)  23 APR 2024 13:37
 entering extended mode
 **./document.tex
 (document.tex
@@ -1146,17 +1146,20 @@ File: D:/background.png Graphic file (type bmp)
  [3]
 File: D:/background.png Graphic file (type bmp)
 <D:/background.png>
- [4] (document.aux)
+ [4]
+File: D:/background.png Graphic file (type bmp)
+<D:/background.png>
+ [5] (document.aux)
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 23DEC294082321A94935B6F8AD9B79B9;218.
+(rerunfilecheck)             Checksum: AE3C818B8526CD7BF92F39AA162E71AB;379.
  ) 
 Here is how much of TeX's memory you used:
- 28984 strings out of 411700
- 596992 string characters out of 2839604
- 942719 words of memory out of 3000000
- 48498 multiletter control sequences out of 15000+200000
+ 29018 strings out of 411700
+ 599124 string characters out of 2839604
+ 944963 words of memory out of 3000000
+ 48532 multiletter control sequences out of 15000+200000
  413156 words of font info for 90 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  83i,10n,88p,472b,743s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on document.pdf (4 pages).
+Output written on document.pdf (5 pages).
