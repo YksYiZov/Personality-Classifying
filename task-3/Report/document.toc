@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}问题一}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}实验方法}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}实验结果}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}问题二}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}实验方法}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}实验结果}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}结果分析}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}一些思考}{4}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Kmeans得到的分类是否有意义}{4}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}为什么Kmeans得到的分类效果会好很多}{4}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}文本提取器可能的改进}{4}{subsubsection.2.4.3}%
+\contentsline {section}{\numberline {3}对整个实验的回顾}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}不足}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}收获}{5}{subsection.3.2}%
