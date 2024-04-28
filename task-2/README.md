@@ -1,7 +1,7 @@
 # Personality-Classifying
 The Project of NLP By Xinyu Dai
 
-(本项目已经上传github，[我的仓库](https://github.com/YksYiZov/Personality-Classifying/tree/main))
+(本项目已经上传github，[我的仓库](https://github.com/YksYiZov/Personality-Classifying/tree/task-2))
 ## Task 2
 ### 子问题1
 #### 概述
